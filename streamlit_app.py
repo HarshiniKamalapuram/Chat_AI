@@ -68,7 +68,7 @@ def main():
     st.title('My UCLan Boat')
 
   #  pdf_docs = st.file_uploader("Upload PDF", type=['pdf'], accept_multiple_files=True)
-    with open(r"C:\Users\Harshini\Downloads\About_UCLan.txt", "r", encoding="latin-1") as file:
+    with open(r"About_UCLan.txt", "r", encoding="latin-1") as file:
         raw_text = file.read() 
     text_chunks = get_text_chunks(raw_text)
     vectorstore = get_vectorstore(text_chunks)
